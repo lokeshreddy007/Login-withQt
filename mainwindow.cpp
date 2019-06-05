@@ -1,11 +1,10 @@
+// imports
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMainWindow>
 #include <QMessageBox>
 
-
-
-
+// functions logic
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -22,8 +21,6 @@ MainWindow::MainWindow(QWidget *parent) :
     }else{
         qDebug() << "Failed to Connect";
     }
-
-
 }
 
 MainWindow::~MainWindow()
@@ -38,10 +35,10 @@ void MainWindow::on_submit_clicked()
     qDebug() << username << passowrd;
     QString command = "Select  * from user where name = '" + username + "' and mail= '"+ passowrd + "'";
 
-//    Select * from user where name = "lokesh" and mail = "lokesh123"
-     QString commandcheck = "select name from user";
+    //    Select * from user where name = "lokesh" and mail = "lokesh123"
+    QString commandcheck = "select name from user";
     qDebug () << command;
-     qDebug () << commandcheck;
+    qDebug () << commandcheck;
     QSqlQuery query(db);
     if(query.exec(command)){
         if(query.size() >0){
@@ -49,7 +46,6 @@ void MainWindow::on_submit_clicked()
         }else{
             QMessageBox::information(this,"Login Failed","pls check");
         }
-        }
-
-        }
+    }
+}
 
