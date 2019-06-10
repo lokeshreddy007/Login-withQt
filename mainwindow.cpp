@@ -4,7 +4,8 @@
 #include <QMainWindow>
 #include <QMessageBox>
 
-// functions logic
+// functions logic 
+ // planning Add new function
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -23,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 }
 
+// planning Add new function
 MainWindow::~MainWindow()
 {
     delete ui;
