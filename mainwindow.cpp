@@ -50,3 +50,4 @@ void MainWindow::on_submit_clicked()
     }
 }
 
+// planning Add new function
