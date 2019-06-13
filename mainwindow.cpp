@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 }
 
-// planning Add new function
+//  DELETE UI
 MainWindow::~MainWindow()
 {
     delete ui;
