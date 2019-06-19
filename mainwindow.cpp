@@ -30,6 +30,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// checking 
 // button clicked function
 void MainWindow::on_submit_clicked()
 {
