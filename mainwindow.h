@@ -29,3 +29,6 @@ private:
 };
 
 #endif // MAINWINDOW_H
+
+
+// now add files 
