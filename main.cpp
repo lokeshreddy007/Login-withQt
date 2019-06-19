@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
+// adding patch
 
 // add comments
 int main(int argc, char *argv[])
