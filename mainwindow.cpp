@@ -30,6 +30,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// checking 
+// pachset 
 // button clicked function
 void MainWindow::on_submit_clicked()
 {
